@@ -1,0 +1,99 @@
+.contact-section {
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #0d1b4c 0%, #13286b 100%);
+    text-align: center;
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ffffff; // Change to white for contrast
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        max-width: 35vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        input,
+        textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.8rem;
+            text-align: left;
+            margin-top: -12px;
+            margin-bottom: -6px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        button {
+            background: #ffffff;
+            color: #0d1b4c;
+            padding: 10px;
+            width: 30vw;
+            align-self: center;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background: #e0e0e0;
+            }
+
+            &:disabled {
+                background: #999;
+                cursor: not-allowed;
+            }
+        }
+
+        .success {
+            color: #00ff88;
+        }
+
+        .error {
+            color: #ff6b6b;
+        }
+    }
+
+    .social-links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+            color: #fff; // or #0d1b4c depending on background
+            font-size: 1.5rem;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #1da1f2; // blue or any hover color
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 90vw !important;
+
+        button {
+            width: 60vw !important;
+        }
+    }
+}

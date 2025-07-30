@@ -1,0 +1,27 @@
+<div class="skills-container">
+    <h2 class="section-title">Skills</h2>
+
+    @for (category of skillCategories; track category) {
+    <h3 class="category-title">{{ category.categoryName }}</h3>
+    <div class="skills-grid">
+        @for (skill of category.skills; track skill.name) {
+        <mat-card class="skill-card">
+            <div class="card-inner" [class.flipped]="skill.hover">
+                <div class="card-front">
+                    <img [src]="skill.logo" [alt]="skill.name">
+                </div>
+                <div class="card-back">
+                    <div class="progress-container">
+                        <mat-progress-spinner [value]="skill.level" mode="determinate" diameter="80" strokeWidth="6">
+                        </mat-progress-spinner>
+                        <div class="progress-value">{{ skill.level }}%</div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="skill-name">{{ skill.name }}</p>
+        </mat-card>
+        }
+    </div>
+    }
+</div>

@@ -1,0 +1,140 @@
+.experience-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #0d1b4c 0%, #13286b 100%);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; // Changed to white for better contrast
+  margin-bottom: 40px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.role-duration-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap; // Ensures proper stacking on mobile
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #dcdcff;
+}
+
+.duration {
+  font-size: 1rem;
+  color: #bbbbdd;
+}
+
+
+.experience-card {
+  background: #1e2a6b; // Slightly lighter blue to stand out
+  width: 85%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #dcdcff;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 1rem;
+  color: #bbbbdd;
+  margin-bottom: 15px;
+}
+
+.projects {
+  margin-top: 10px;
+}
+
+.projects h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 15px;
+  border-left: 3px solid #e94b4b;
+  padding-left: 10px;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #dcdcff;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-chip {
+  background: #e94b4b; // Red accent for better contrast
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .company {
+    font-size: 1.3rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+}

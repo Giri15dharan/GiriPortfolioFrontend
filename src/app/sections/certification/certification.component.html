@@ -1,0 +1,19 @@
+<div class="certifications-section" id="certifications">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-grid">
+    @for (cert of certifications; track cert.name) {
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3 class="cert-title">{{ cert.name }}</h3>
+        <p class="cert-issuer">{{ cert.issuer }}</p>
+        <div>
+          <a [href]="cert.link" target="_blank" rel="noopener noreferrer" aria-label="View Certificate">
+            View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
