@@ -58,9 +58,13 @@
     display: block;
   }
 
+  .navbar {
+    height: 45px;
+  }
+
   .navbar .menu {
     position: absolute;
-    top: 60px;
+    top: 45px;
     left: 2vw;
     background-color: #ffffff;
     flex-direction: column;
@@ -109,6 +113,6 @@
   }
 
   .container {
-    padding-top: 60px;
+    padding-top: 45px;
   }
 }
