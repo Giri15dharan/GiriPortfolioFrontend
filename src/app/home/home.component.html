@@ -1,0 +1,31 @@
+<nav class="navbar">
+  <div class="brand">GIRIDHARAN S</div>
+
+  <div class="menu-icon" (click)="toggleMenu()">☰</div>
+
+  <div class="menu" [class.open]="menuOpen">
+    <a href="#about" [class.active]="currentSection === 'about'" (click)="closeMenu()">About</a>
+    <a href="#skills" [class.active]="currentSection === 'skills'" (click)="closeMenu()">Skills</a>
+    <a href="#experience" [class.active]="currentSection === 'experience'" (click)="closeMenu()">Experience</a>
+    <a href="#certification" [class.active]="currentSection === 'certification'" (click)="closeMenu()">Certification</a>
+    <a href="#contact" [class.active]="currentSection === 'contact'" (click)="closeMenu()">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <section id="about">
+    <app-about></app-about>
+  </section>
+  <section id="skills">
+    <app-skills></app-skills>
+  </section>
+  <section id="experience">
+    <app-experience></app-experience>
+  </section>
+  <section id="certification">
+    <app-certification></app-certification>
+  </section>
+  <section id="contact">
+    <app-contact></app-contact>
+  </section>
+</div>

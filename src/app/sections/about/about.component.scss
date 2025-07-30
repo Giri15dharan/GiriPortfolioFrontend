@@ -1,0 +1,127 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #0d1b4c 0%, #142b6e 100%);
+  color: white;
+  padding: 0px 80px;
+  height: 100vh;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text .intro {
+  font-size: 1.2rem;
+  color: #dcdcff;
+  margin-bottom: 15px;
+}
+
+.about-text .name {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #F5F5F5;
+  margin-bottom: 10px;
+}
+
+.about-text .role {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #F5F5F5;
+}
+
+.about-text .description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #dcdcff;
+}
+
+.contact-btn {
+  background-color: #e94b4b;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ff5c5c;
+  }
+}
+
+.about-image img {
+  padding-top: 15px;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation-delay: 0.3s;
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation-delay: 0.3s;
+  animation: slideInRight 1s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 20px;
+    height: auto;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-text .name {
+    font-size: 2rem;
+  }
+
+  .about-text .role {
+    font-size: 1.5rem;
+  }
+
+  .about-image img {
+    width: 100px;
+    height: 100px;
+    padding-top: 0px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+  }
+}
