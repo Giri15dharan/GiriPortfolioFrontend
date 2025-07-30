@@ -100,7 +100,8 @@
     flex-direction: column-reverse;
     text-align: center;
     padding: 50px 20px;
-    height: auto;
+    justify-content: space-evenly;
+    height: 80vh;
   }
 
   .about-text {
@@ -116,8 +117,8 @@
   }
 
   .about-image img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     padding-top: 0px;
     border-radius: 50%;
     object-fit: cover;

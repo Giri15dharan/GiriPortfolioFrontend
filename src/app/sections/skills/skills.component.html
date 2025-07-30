@@ -5,7 +5,7 @@
     <h3 class="category-title">{{ category.categoryName }}</h3>
     <div class="skills-grid">
         @for (skill of category.skills; track skill.name) {
-        <mat-card class="skill-card">
+        <mat-card class="skill-card" (click)="toggleFlip(skill)">
             <div class="card-inner" [class.flipped]="skill.hover">
                 <div class="card-front">
                     <img [src]="skill.logo" [alt]="skill.name">
@@ -17,11 +17,11 @@
                         <div class="progress-value">{{ skill.level }}%</div>
                     </div>
                 </div>
-
             </div>
             <p class="skill-name">{{ skill.name }}</p>
         </mat-card>
         }
     </div>
     }
+    <p class="skill-hint" *ngIf="isMobile()">Tap on each skill to see the level</p>
 </div>
