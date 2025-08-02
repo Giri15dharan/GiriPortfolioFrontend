@@ -7,10 +7,10 @@
         @for (skill of category.skills; track skill.name) {
         <mat-card class="skill-card" (click)="toggleFlip(skill)">
             <div class="card-inner" [class.flipped]="skill.hover">
-                <div class="card-front">
+                <div class="card-front" (click)="toggleFlip(skill)">
                     <img [src]="skill.logo" [alt]="skill.name">
                 </div>
-                <div class="card-back">
+                <div class="card-back" (click)="toggleFlip(skill)">
                     <div class="progress-container">
                         <mat-progress-spinner [value]="skill.level" mode="determinate" diameter="80" strokeWidth="6">
                         </mat-progress-spinner>
