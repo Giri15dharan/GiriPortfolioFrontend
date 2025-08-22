@@ -3,8 +3,11 @@
     <p class="intro">Hi there, This is</p>
     <h1 class="name">{{about?.name}}</h1>
     <h2 class="role">{{about?.title}}</h2>
+    <h4 class="location">
+      {{about?.location}}
+    </h4>
     <p class="description">
-      I am a developer with 3.5 years of experience working with .NET Core, Angular, PostgreSQL, Azure, and AWS.
+      {{about?.description}}
     </p>
     <button class="contact-btn" (click)="scrollToContact()">Contact Me</button>
   </div>
