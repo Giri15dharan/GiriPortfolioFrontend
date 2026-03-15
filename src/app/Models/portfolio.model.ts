@@ -24,6 +24,7 @@ export interface Project {
   projectName: string;
   description: string;
   technologies: string[];
+  responsibilities: string[];
 }
 
 export interface Experience {

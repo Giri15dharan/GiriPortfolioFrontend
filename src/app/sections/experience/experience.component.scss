@@ -124,6 +124,21 @@
   border-radius: 15px;
 }
 
+.responsibilities {
+  margin: 8px 0 10px 0;
+
+  ul {
+    padding-left: 18px;
+  }
+
+  li {
+    font-size: 0.9rem;
+    color: #dcdcff;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+}
+
 @media (max-width: 768px) {
   .experience-card {
     width: 95%;
